@@ -25,7 +25,7 @@
     animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
-    animation-timing-function:ease-in;
+    animation-timing-function:ease;
     animation-direction:step-end;
 
 }
@@ -33,10 +33,69 @@
 @keyframes rightMovement{
     from{
         top:0;
-        left: 0;
+        left:0;
     }
     to{
         top:0;
+        left: 1500px;
+    }
+}
+
+.ball{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border:2px solid black;
+    border-radius: 20px;
+    margin: 350px;
+    margin-left: 900px;
+    position: relative;
+    align-content: center;
+    animation-name: centerMovement;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function:ease;
+    animation-direction:step-end;
+
+}
+
+@keyframes centerMovement{
+    from{
+        right: 50px;
+        bottom: 150px;
+    }
+
+    to{
+        bottom:500px;
+        top:100px;
+
+    }
+}
+
+.box1{
+    height:90px;
+    width: 350px;
+    background-color: aqua;
+    border: 3px solid red;
+    border-radius: 50px;
+    margin: 20px;
+    position: fixed;
+    animation-name: lightMovement;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function:ease;
+    animation-direction:step-end;
+
+}
+@keyframes lightMovement{
+    from{
+        bottom:2px;
+        left:0;
+    }
+    to{
+        /* top:23px; */
         left: 1500px;
     }
 }
